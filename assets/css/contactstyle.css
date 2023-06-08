@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@400;500&display=swap');
+
+.light-mode {
+    --Background: rgb(248, 248, 248);
+    --Header1: rgb(35, 35, 35);
+    --Header2: rgb(55, 55, 55);
+    --Header3: rgb(75, 75, 75);
+    --Header4: rgb(100, 100, 100);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: K2D;
+}
+body {
+    background-color: var(--Background);
+    overflow: hidden;
+}
+
+a:hover {
+    opacity: 0.6;
+}
+
+h1 {
+    color: (--Header1);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+h2 {
+    color: (--Header2);
+    font-size: 24px;
+    line-height: 24px;
+    
+}
+
+h3 {
+    color: (--Header3);
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+/* Contact */
+#contact {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    padding: 28px;
+    flex-wrap: wrap;
+}
+
+#contact .avatar img {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    border: 3px solid black;
+    box-shadow: 0 0 12px 1px gray;
+    user-select: none;
+    transition: all 150ms linear;
+}
+#contact .avatar img:hover {
+    transform: scale(1.05);
+}
+
+#contact .my-info {  
+    padding-left: 5vw;
+    /* width: 45vw; */
+}
+
+#contact .navigation {
+    margin-top: 20px;
+    width: 50vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#contact .navigation .navigation-button {
+    width: 120px;
+    height: 32px;
+    border-radius: 8px;
+    border: 1px solid black;
+    transition: all 150ms linear;
+    box-shadow: 0 0 5px 0 gray;
+    cursor: pointer;
+    background-color: var(--Background);
+}
+
+#contact .navigation .navigation-button:hover {
+    background-color: white;
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: #c1c1c1 0 0 8px 0 inset, 0 0 10px 4px #c1c1c1
+}
+
+#contact .navigation .navigation-button:active {
+    background-color: #c1c1c1;
+    transform: scale(1.05);
+    box-shadow: white 0px 30px 60px -12px inset, white 0px 18px 36px -18px inset, gray 0 30px 60px -18px inset, 0 0 10px 4px #c1c1c1;
+}
+
+#contact .navigation .navigation-button:focus {
+    background-color: #c1c1c1;
+    transform: scale(1.05);
+    box-shadow: whitesmoke 0 0 12px 0 inset, 0 0 16px 4px whitesmoke;
+}
+/* End Contact */

@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@400;500&display=swap');
+
+:root {
+    --Background: rgb(248, 248, 248);
+    --Header1: rgb(35, 35, 35);
+    --Header2: rgb(55, 55, 55);
+    --Header3: rgb(75, 75, 75);
+    --Header4: rgb(100, 100, 100);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: K2D;
+    font-size: 13pt;
+}
+body {
+    background-color: var(--Background);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    /* text-decoration: none; */
+}
+
+a:hover {
+    opacity: 0.6;
+}
+
+:root::-webkit-scrollbar{
+	width: 5px;
+    background-color: transparent;
+}
+:root::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+:root::-webkit-scrollbar-thumb{
+	background-color: gray;
+    border-radius: 12px;
+}
+:root::-webkit-scrollbar-corner {
+    display: none;
+}
+
+h1 {
+    color: var(--Header1);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+h2 {
+    color: var(--Header2);
+    font-size: 20px;
+    line-height: 20px;
+}
+
+h3 {
+    color: var(--Header3);
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.pbreak {
+    margin-top: 28px;
+    width: 350px;
+    height: 3px;
+    background-color: var(--Header1);
+    border-radius: 3px;
+    margin-top: 3%;
+    margin-left: calc(50% - 175px);
+}
+
+/* Content */
+#content {
+    padding: 4vh 4vw;
+}
+
+/* End Content */
+
+
+
+/* Introduction */
+#contact {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 1%;
+    margin: 0 30%;
+}
+.contact-button {
+    display: inline-flex;    
+}
+.contact-button img {
+    max-width: 40px;
+    transition: all 150ms linear;
+}
+.contact-button :hover {
+    transform: scale(1.2);
+}
+/* End Introduction */
+
+
+
+/* Projects */
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+}
+table tr:first-child {
+    background-color: #eee;
+    position: sticky;
+    top: 0;
+    font-weight: 600;
+}
+td {
+    padding: 1rem 2rem;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+/* End Projects */
+
+
+
+/* Papers */
+
+/* End Papers */
+
+
+
+/* Curriculum Vitae */
+
+/* End Curriculum Vitae */
+
+
+
+/* Pictures */
+#photos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 25%;
+}
+#photos img {
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    cursor: zoom-in;
+}
+.half {
+    margin-top: 5%;
+    min-width: calc(50% - 2.5%);
+    max-width: calc(50% - 2.5%);
+    min-height: calc(50% - 2.5%);
+    max-height: calc(50% - 2.5%);
+}
+.full {
+    margin-top: 5%;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+
+}
+/* End Pictures */

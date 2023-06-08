@@ -1,0 +1,133 @@
+/* Mobile */
+@media (max-width: 349px)
+{
+    #contact {
+        height: 80vh;
+    }
+    #content {
+        height: 145vh;
+    }
+}
+@media (min-width: 350px) and (max-width: 364px)
+{
+    #contact {
+        height: 72vh;
+    }
+    #content {
+        height: 110vh;
+    }
+}
+@media (min-width: 365px) and (max-width: 379px)
+{
+    #contact {
+        height: 80vh;
+    }
+    #content {
+        height: 102vh;
+    }
+}
+@media (min-width: 380px) and (max-width: 409px)
+{
+    #contact {
+        height: 62vh;
+    }
+    #content {
+        height: 103vh;
+    }
+}
+@media (min-width: 410px) and (max-width: 538px)
+{
+    #contact {
+        height: 58vh;
+    }
+    #content {
+        height: 97vh;
+    }
+}
+@media (min-width: 538px) and (max-width: 560px)
+{
+    #contact {
+        height: 48vh;
+    }
+    #content {
+        height: 80vh;
+    }
+}
+@media (min-width: 560px) and (max-width: 740px)
+{
+    #contact {
+        height: 45vh;
+    }
+    #content {
+        height: 80vh;
+    }
+}
+@media (min-width: 500px) and (max-width: 600px) and (min-height: 660px) and (max-height: 760px)
+{
+    #contact {
+        height: 72vh;
+    }
+    #content {
+        height: 90vh;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 768px)
+{
+    #contact {
+        height: 21vh;
+    }
+    #content {
+        height: 78vh;
+    }
+}
+@media (min-width: 768px) and (max-width: 819px)
+{
+    #contact {
+        height: 28vh;
+    }
+    #content {
+        height: 71vh;
+    }
+}
+
+@media (min-width: 820px) and (max-width: 1060px)
+{
+    #contact {
+        height: 23vh;
+    }
+    #content {
+        height: 76vh;
+    }
+}
+
+@media (min-width: 1020px) and (max-width: 1030px) and (min-height: 550px) and (max-height: 650px)
+{
+    #contact {
+        height: 45vh;
+    }
+    #content {
+        height: 54vh;
+    }
+}
+
+@media (min-width: 740px) and (max-width: 1060px) and (min-height: 650px) and (max-height: 800px)
+{
+    #contact {
+        height: 34vh;
+    }
+    #content {
+        height: 65vh;
+    }
+}
+/* PC */
+@media (min-width: 1060px)
+{
+    #contact {
+        height: 35vh;
+    }
+    #content {
+        height: 64vh;
+    }
+}
