@@ -48,7 +48,7 @@ h3 {
     display: flex;
     justify-content: center;
     background-color: transparent;
-    padding: 28px;
+    padding: 8px;
     flex-wrap: wrap;
 }
 
@@ -71,7 +71,7 @@ h3 {
 }
 
 #contact .navigation {
-    margin-top: 20px;
+    margin-top: 16px;
     width: 50vw;
     display: flex;
     justify-content: space-evenly;

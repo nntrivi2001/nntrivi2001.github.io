@@ -16,6 +16,9 @@
     #contact .navigation .navigation-button {
         width: 92px;
     }
+    #contact #my-name {
+        text-align: center;
+    }
 }
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1060px) and (min-height: 230px) and (max-height: 360px)
