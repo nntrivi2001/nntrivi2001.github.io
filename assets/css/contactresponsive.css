@@ -35,6 +35,7 @@
     }
     #contact .avatar img {
         width: 160px;
+        margin-top: 2vh;
         height: 160px;
     }
     #contact .navigation {
@@ -60,6 +61,7 @@
     }
     #contact .avatar img {
         width: 180px;
+        margin-top: 2vh;
         height: 180px;
     }
     #contact .navigation {
@@ -86,6 +88,7 @@
     #contact .avatar img {
         width: 180px;
         height: 180px;
+        margin-top: 2vh;
     }
     #contact .navigation {
         width: 90vw;
@@ -110,6 +113,7 @@
     }
     #contact .avatar img {
         width: 180px;
+        margin-top: 2vh;
         height: 180px;
     }
     #contact .navigation {
@@ -137,6 +141,7 @@
     #contact .avatar img {
         width: 180px;
         height: 180px;
+        margin-top: 2vh;
     }
     #contact .navigation {
         width: 90vw;
@@ -148,8 +153,42 @@
         font-size: 20px;
     }
 }
-/* PC */
+
+/* Laptop */
 @media (min-width: 1060px)
 {
+    
+}
 
+
+/* PC */
+@media (min-width: 1850px)
+{
+    h2 {
+        font-size: 28px;
+    }
+    h3 {
+        font-size: 22px;
+        line-height: 22px;
+    }
+    #contact .my-info {  
+        width: 60vw;
+        margin-top: 10px;
+    }
+    #contact .avatar img {
+        margin-top: 6vh;
+        width: 180px;
+        height: 180px;
+    }
+    #contact .navigation {
+        margin-top: 20px;
+        width: 80vw;
+        justify-content: space-between;
+    }
+
+    #contact .navigation .navigation-button {
+        width: 160px;
+        height: 40px;
+        font-size: 18px;
+    }
 }

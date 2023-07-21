@@ -36,8 +36,44 @@
         margin: 0 10%;
     }
 }
-/* PC */
+
+/* Laptop */
 @media (min-width: 1060px)
 {
+    
+}
 
+/* PC */
+@media (min-width: 1850px)
+{
+    #shortCV {
+        font-size: 24px;
+    }
+
+    #downFullCV{
+        font-size: 22px;
+    }
+
+    h1 {
+        font-size: 32px;
+        font-weight: 600;
+    }
+    
+    h2 {
+        font-size: 28px;
+        line-height: 28px;
+    }
+    
+    h3 {
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 400;
+    }
+    html, body {
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+        font-family: K2D;
+        font-size: 17pt;
+    }
 }
