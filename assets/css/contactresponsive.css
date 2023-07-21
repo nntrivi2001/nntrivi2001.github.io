@@ -168,21 +168,21 @@
         font-size: 28px;
     }
     h3 {
-        font-size: 22px;
-        line-height: 22px;
+        font-size: 24px;
+        line-height: 24px;
     }
     #contact .my-info {  
-        width: 60vw;
+        width: 50vw;
         margin-top: 10px;
     }
     #contact .avatar img {
         margin-top: 6vh;
-        width: 180px;
-        height: 180px;
+        width: 200px;
+        height: 200px;
     }
     #contact .navigation {
-        margin-top: 20px;
-        width: 80vw;
+        margin-top: 32px;
+        width: 60vw;
         justify-content: space-between;
     }
 
