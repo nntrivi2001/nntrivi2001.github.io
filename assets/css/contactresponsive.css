@@ -157,7 +157,15 @@
 /* Laptop */
 @media (min-width: 1060px)
 {
-    
+    #contact .navigation {
+        width: 90vw;
+        /* justify-content: space-between; */
+    }
+
+    #contact .navigation .navigation-button {
+        height: 40px;
+        font-size: 16px;
+    }
 }
 
 

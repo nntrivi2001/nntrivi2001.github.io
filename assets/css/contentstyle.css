@@ -13,7 +13,7 @@ html, body {
     padding: 0;
     scroll-behavior: smooth;
     font-family: K2D;
-    font-size: 13pt;
+    font-size: 18pt;
 }
 body {
     background-color: var(--Background);
@@ -48,19 +48,19 @@ a:hover {
 
 h1 {
     color: var(--Header1);
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 600;
 }
 
 h2 {
     color: var(--Header2);
-    font-size: 20px;
+    font-size: 28px;
     line-height: 20px;
 }
 
 h3 {
     color: var(--Header3);
-    font-size: 18px;
+    font-size: 24px;
     line-height: 18px;
     font-weight: 400;
 }
