@@ -91,7 +91,6 @@
         margin-top: 2vh;
     }
     #contact .navigation {
-        width: 90vw;
         justify-content: space-between;
     }
     #contact .navigation .navigation-button {
@@ -117,7 +116,7 @@
         height: 180px;
     }
     #contact .navigation {
-        width: 90vw;
+        width: 80vw;
         justify-content: space-between;
     }
 
@@ -144,7 +143,7 @@
         margin-top: 2vh;
     }
     #contact .navigation {
-        width: 90vw;
+        width: 80vw;
         justify-content: space-between;
     }
 
@@ -173,11 +172,14 @@
 @media (min-width: 1850px)
 {
     h2 {
-        font-size: 28px;
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 24px;
     }
     h3 {
-        font-size: 24px;
-        line-height: 24px;
+        font-size: 20px;
+        line-height: 20px;
     }
     #contact .my-info {  
         width: 50vw;
