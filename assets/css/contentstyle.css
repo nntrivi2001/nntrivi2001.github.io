@@ -13,7 +13,7 @@ html, body {
     padding: 0;
     scroll-behavior: smooth;
     font-family: K2D;
-    font-size: 18pt;
+    font-size: 14pt;
 }
 body {
     background-color: var(--Background);
