@@ -131,3 +131,14 @@
         height: 64vh;
     }
 }
+
+/* PC */
+@media (min-width: 2100px)
+{
+    #contact {
+        height: 38vh;
+    }
+    #content {
+        height: 61vh;
+    }
+}
