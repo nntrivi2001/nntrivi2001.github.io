@@ -31,11 +31,12 @@ provinces.forEach(province => {
       // Mở ảnh
       if (imgPath) {
         traveled_picture.src = imgPath;
-
+        traveled_picture.style.height = 'auto'; 
     }}
   });
   province.addEventListener('mouseout', (e)=> {
-    traveled_picture.src = ""
+    traveled_picture.src = "";
+    traveled_picture.style.height = '0';
     provinceInfo.style.opacity = 0;
   })
 })
