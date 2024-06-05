@@ -1,6 +1,47 @@
 /* Mobile */
-@media (max-width: 740px)
-{
+@media (max-width: 349px) {
+    #contact .my-info {  
+        width: 80vw;
+    }
+    #contact .avatar img {
+        width: 160px;
+        height: 160px;
+        margin-top: 2vh;
+    }
+    #contact .navigation {
+        width: 90vw;
+        justify-content: space-evenly;
+    }
+    #contact .navigation .navigation-button {
+        width: 80px;
+    }
+    #contact #my-name {
+        text-align: center;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 409px) {
+    #contact .my-info {  
+        width: 80vw;
+    }
+    #contact .avatar img {
+        width: 180px;
+        height: 180px;
+        margin-top: 2vh;
+    }
+    #contact .navigation {
+        width: 90vw;
+        justify-content: space-evenly;
+    }
+    #contact .navigation .navigation-button {
+        width: 92px;
+    }
+    #contact #my-name {
+        text-align: center;
+    }
+}
+
+@media (min-width: 410px) and (max-width: 599px) {
     #contact .my-info {  
         width: 70vw;
     }
@@ -11,18 +52,35 @@
     }
     #contact .navigation {
         width: 90vw;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
     #contact .navigation .navigation-button {
-        width: 92px;
-    }
-    #contact #my-name {
-        text-align: center;
+        width: 100px;
+        font-size: 14px;
     }
 }
+
+@media (min-width: 600px) and (max-width: 740px) {
+    #contact .my-info {  
+        width: 60vw;
+    }
+    #contact .avatar img {
+        width: 180px;
+        height: 180px;
+        margin-top: 2vh;
+    }
+    #contact .navigation {
+        width: 90vw;
+        justify-content: space-evenly;
+    }
+    #contact .navigation .navigation-button {
+        width: 120px;
+        font-size: 16px;
+    }
+}
+
 /* Tablet */
-@media (min-width: 740px) and (max-width: 1060px) and (min-height: 230px) and (max-height: 360px)
-{
+@media (min-width: 741px) and (max-width: 819px) {
     h2 {
         font-size: 24px;
     }
@@ -35,140 +93,54 @@
     }
     #contact .avatar img {
         width: 160px;
-        margin-top: 2vh;
         height: 160px;
+        margin-top: 2vh;
     }
     #contact .navigation {
-        width: 90vw;
-        justify-content: space-between;
+        width: 80vw;
+        justify-content: space-evenly;
     }
     #contact .navigation .navigation-button {
         width: 120px;
         font-size: 16px;
     }
 }
-@media (min-width: 740px) and (max-width: 768px) and (max-height: 230px)
-{
-    h2 {
-        font-size: 36px;
-    }
-    h3 {
-        font-size: 28px;
-        line-height: 28px;
-    }
-    #contact .my-info {  
-        width: 60vw;
-    }
-    #contact .avatar img {
-        width: 180px;
-        margin-top: 2vh;
-        height: 180px;
-    }
-    #contact .navigation {
-        width: 90vw;
-        justify-content: space-between;
-    }
-    #contact .navigation .navigation-button {
-        width: 160px;
-        font-size: 20px;
-    }
-}
-@media (min-width: 740px) and (max-width: 768px) and (min-height: 360px)
-{
-    h2 {
-        font-size: 36px;
-    }
-    h3 {
-        font-size: 28px;
-        line-height: 28px;
-    }
-    #contact .my-info {  
-        width: 60vw;
-    }
-    #contact .avatar img {
-        width: 180px;
-        height: 180px;
-        margin-top: 2vh;
-    }
-    #contact .navigation {
-        justify-content: space-between;
-    }
-    #contact .navigation .navigation-button {
-        width: 160px;
-        font-size: 20px;
-    }
-}
-@media (min-width: 768px) and (max-width: 1060px) and (max-height: 230px)
-{
-    h2 {
-        font-size: 32px;
-    }
-    h3 {
-        font-size: 24px;
-        line-height: 24px;
-    }
-    #contact .my-info {  
-        width: 60vw;
-    }
-    #contact .avatar img {
-        width: 180px;
-        margin-top: 2vh;
-        height: 180px;
-    }
-    #contact .navigation {
-        width: 80vw;
-        justify-content: space-between;
-    }
 
-    #contact .navigation .navigation-button {
-        width: 160px;
-        font-size: 20px;
-    }
-}
-@media (min-width: 768px) and (max-width: 1060px) and (min-height: 360px)
-{
+@media (min-width: 820px) and (max-width: 1060px) {
     h2 {
-        font-size: 32px;
+        font-size: 24px;
     }
     h3 {
-        font-size: 24px;
-        line-height: 24px;
+        font-size: 18px;
+        line-height: 18px;
     }
     #contact .my-info {  
         width: 60vw;
     }
     #contact .avatar img {
-        width: 180px;
-        height: 180px;
+        width: 160px;
+        height: 160px;
         margin-top: 2vh;
     }
     #contact .navigation {
         width: 80vw;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
-
     #contact .navigation .navigation-button {
-        width: 160px;
-        font-size: 20px;
+        width: 120px;
+        font-size: 16px;
     }
 }
 
 /* Laptop */
-@media (min-width: 1060px)
-{
+@media (min-width: 1061px) and (max-width: 1600px) {
     #contact .navigation {
         width: 80vw;
-        /* justify-content: space-between; */
     }
 }
 
-
 /* PC */
-@media (min-width: 1850px)
-{
-    h2 {
-        font-size: 24px;
-    }
+@media (min-width: 1601px) {
     h2 {
         font-size: 24px;
     }
@@ -188,9 +160,8 @@
     #contact .navigation {
         margin-top: 32px;
         width: 60vw;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
-
     #contact .navigation .navigation-button {
         width: 160px;
         height: 40px;

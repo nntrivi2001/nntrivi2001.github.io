@@ -26,7 +26,7 @@ provinces.forEach(province => {
     provinceInfo.style.left = e.clientX + 'px';
 
     // Kiểm tra nếu có class 'traveled'
-    if (province.classList.contains('traveled')) {
+    if (province.classList.contains('traveled')|| province.classList.contains('travel-alone')){
       const imgPath = images[province.id]; // Lấy đường dẫn ảnh từ đối tượng ánh xạ
       // Mở ảnh
       if (imgPath) {

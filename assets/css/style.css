@@ -28,12 +28,10 @@ iframe {
     height: 36vh;
     border-bottom: 1px solid gray;
     box-shadow: 0 0 8px 2px gray;
-    min-width: 438px;
 }
 
 #content {
     height: 63vh;
-    min-width: 438px;
 }
 
 img {

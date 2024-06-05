@@ -220,6 +220,15 @@ td {
     stroke-width:0.5;
 }
 
+.travel-alone
+{
+    fill: #77cfdd;
+    fill-opacity: 1;
+    stroke:white;
+    stroke-opacity: 1;
+    stroke-width:0.5;
+}
+
 #traveled-picture{
     height: auto; 
     width: auto; 
