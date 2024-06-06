@@ -23,6 +23,18 @@
     }
 }
 
+@media (max-width: 740px){
+    #map{
+        margin-left: 5%;
+        svg{
+            width: 90%;
+        }
+    }
+    #photos {
+        margin: 0 5%;
+    }
+}
+
 /* Tablet */
 @media (min-width: 741px) and (max-width: 819px) {
     #contact {
@@ -35,6 +47,19 @@
         margin: 0 10%;
     }
 }
+
+@media (max-width: 1060px){
+    #map{
+        margin-left: 10%;
+        svg{
+            width: 80%;
+        }
+    }
+    #photos {
+        margin: 0 10%;
+    }
+}
+
 
 /* Laptop */
 @media (min-width: 1061px) and (max-width: 1600px) {
