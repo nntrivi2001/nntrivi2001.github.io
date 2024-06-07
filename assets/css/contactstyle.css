@@ -63,6 +63,7 @@ h3 {
 }
 #contact .avatar img:hover {
     transform: scale(1.05);
+    transition: all 150ms linear;
 }
 
 #contact .my-info {  

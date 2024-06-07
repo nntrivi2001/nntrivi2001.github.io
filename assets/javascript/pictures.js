@@ -14,31 +14,57 @@ imgs.forEach(img => {
 let provinceInfo = document.querySelector('#province');
 let provinceName = document.querySelector('#province-name');
 let traveled_picture = document.querySelector('#traveled-picture');
+let picture_description = document.querySelector('#picture-description');
 let provinces = document.querySelectorAll('path');
+
+// Để thông tin ảnh không vượt quá khung hình
+function adjustPosition(e) {
+  const infoBox = provinceInfo.getBoundingClientRect();
+  let top = e.clientY;
+  let left = e.clientX;
+
+  // Vượt trên
+  if (top - infoBox.height < 0) {
+    top = top + infoBox.height - 80;
+  }
+  provinceInfo.style.top = top + 'px';
+  provinceInfo.style.left = left + 'px';
+}
 
 
 provinces.forEach(province => {
-  province.addEventListener('mouseenter', (e)=> {
-    provinceName.innerHTML = province.getAttribute('title');
-    provinceInfo.style.opacity = 1;
-    // console.log(provinceName, 'x: ', e.clientX, 'y: ', e.clientY);
-    provinceInfo.style.top = e.clientY + 'px';
-    provinceInfo.style.left = e.clientX + 'px';
-
+  province.addEventListener('mousemove', (e)=> {
     // Kiểm tra nếu có class 'traveled'
     if (province.classList.contains('traveled')|| province.classList.contains('travel-alone')){
       const imgPath = images[province.id]; // Lấy đường dẫn ảnh từ đối tượng ánh xạ
+      const imgDesc = description[province.id];
+
       // Mở ảnh
       if (imgPath) {
         traveled_picture.src = imgPath;
-        traveled_picture.style.height = 'auto'; 
-    }}
+        traveled_picture.style.display = "block";
+        picture_description.innerHTML = imgDesc;
+        picture_description.style.display = "block";
+        
+        traveled_picture.onload = function() {
+          adjustPosition(e);
+          provinceName.innerHTML = province.getAttribute('title');
+          provinceInfo.style.opacity = 1;
+          }
+        }
+      }
+    else {
+      provinceName.innerHTML = province.getAttribute('title');
+      adjustPosition(e);
+      provinceInfo.style.opacity = 1;
+    };
   });
+
   province.addEventListener('mouseout', (e)=> {
-    traveled_picture.src = "";
-    traveled_picture.style.height = '0';
+    traveled_picture.style.display = "none";
+    picture_description.style.display = "none";
     provinceInfo.style.opacity = 0;
-  })
+  });
 })
 
 
@@ -98,7 +124,7 @@ const description = {
   "VN-34": "",  "VN-35": "",
   "VN-36": "",  "VN-37": "",
   "VN-39": "",  "VN-40": "",
-  "VN-41": "",  "VN-43": "",
+  "VN-41": "",  "VN-43": "08/03/2024",
   "VN-44": "",  "VN-45": "",
   "VN-46": "",  "VN-47": "",
   "VN-49": "",  "VN-50": "",
@@ -113,7 +139,7 @@ const description = {
   "VN-71": "",  "VN-72": "",
   "VN-73": "",  "VN-CT": "",
   "VN-DN": "",  "VN-HN": "",
-  "VN-HP": "",  "VN-SG": "",
+  "VN-HP": "",  "VN-SG": "25/04/2024",
   "VN-HS": "",  "VN-TS": "",
   "VN-PQ": "",  "VN-CD": "",
   "VN-CLT": "",

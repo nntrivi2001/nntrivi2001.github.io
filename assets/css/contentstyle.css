@@ -65,6 +65,13 @@ h3 {
     font-weight: 400;
 }
 
+h4 {
+    color: var(--Header4);
+    font-size: 16px;
+    line-height: 14px;
+    font-weight: 400;
+}
+
 .pbreak {
     margin-top: 28px;
     width: 350px;
@@ -151,8 +158,20 @@ td {
     border-radius: 15px;
     -moz-border-radius: 15px;
     -webkit-border-radius: 15px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
+    
+    cursor: -moz-zoom-in; 
+    cursor: -webkit-zoom-in;
     cursor: zoom-in;
+
+    transition: all 150ms linear;
 }
+#photos img:hover {
+    transform: scale(1.05);
+    transition: all 150ms linear;
+}
+
 .half {
     margin-top: 5%;
     min-width: calc(50% - 2.5%);
@@ -173,33 +192,43 @@ td {
 
 #map{
     margin-left: 15%;
-    svg{
-        height: 100%;
-        width: 80%;
+}
 
-        path:hover{
-            opacity: .6;
-            cursor: pointer;
-        }
-    }
+#map svg{
+    height: 100%;
+    width: 80%;
+}
+
+#map svg path:hover{
+    opacity: .6;
+    cursor: pointer;
+    transition: all 200ms linear;
 }
 
 #province{
-    border: 4px solid rgba(85, 203, 205, 0.8);
+    /* border: 8px solid rgba(22, 22, 22, 0.9); */
+    /* padding: 8px; */
     position: fixed;
     transform: translate(-50%, -100%);
-    top: 0;
-    left: 0; 
+    top: 30vh;
+    left: 50vw;
     opacity: 0;
     pointer-events: none;
     text-align: center;
-    border-radius: 1rem;
-    background: rgba(212, 240, 240, 0.8);
-    box-shadow: 0 0 0 4px rgb(171, 222, 230);
-    
-    #province-name{
-        margin: .5rem;
-    }
+    border-radius: 12px;
+    background: radial-gradient(circle, rgba(228,234,230,0.7) 20%, rgba(238,236,234,0.75) 40%, rgba(224,228,232,0.8) 55%, rgba(238,240,242,0.85) 70%, rgba(250,246,242,0.9) 85%, rgba(250,250,250,0.4) 100%);
+    /* box-shadow: 0 0 0 4px rgb(171, 222, 230); */
+    box-shadow: 2px 5px 8px 4px rgba(0, 0, 0, 0.4);
+    transition: all 200ms linear;
+}
+
+#province #province-name{
+    margin: .5rem;
+    font-weight: bold;
+}
+
+#province #picture-description{
+    margin: .5rem;
 }
 
 .untraveled
@@ -229,13 +258,14 @@ td {
     stroke-width:0.5;
 }
 
-#traveled-picture{
+#province #traveled-picture{
     height: auto; 
     width: auto; 
-    max-width: 300px; 
-    max-height: 300px;
-    border-radius: 2rem;
-    margin: 12px;
+    max-width: 15rem; 
+    max-height: 13rem;
+    border-radius: 16px 16px 0 0;
+    padding: 8px 8px 0 8px;
+    display: none;
 }
     /* End Vietnam Map */
 
