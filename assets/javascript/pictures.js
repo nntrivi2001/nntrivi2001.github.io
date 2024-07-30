@@ -144,3 +144,11 @@ const description = {
   "VN-PQ": "",  "VN-CD": "",
   "VN-CLT": "",
 };
+
+// Preload all images
+Object.values(images).forEach(imgPath => {
+  if (imgPath) {
+    const img = new Image();
+    img.src = imgPath;
+  }
+});
