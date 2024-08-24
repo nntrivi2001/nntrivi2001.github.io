@@ -1,7 +1,7 @@
 const images = {
-    "Optimizing Traffic Lights Using Traffic Density": "",
+    "Optimizing Traffic Lights Using Traffic Density": "assets\\img\\TrafficLightControl-5.gif",
     "Nozzle Quality Inspection": "assets/img/NozzleQualityInspection.gif",
-    "Face Verification using Siamese Neural Network": "", // nếu cần
+    "Face Verification using Siamese Neural Network": "assets\img\SecureMemo.jpg", // nếu cần
     "Incomplete product detection using YOLOv8": "", // nếu cần
     // Thêm các dự án khác khi cần thiết
 };
