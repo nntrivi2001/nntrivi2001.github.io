@@ -1,4 +1,5 @@
 const images = {
+    "License Plate Recognition using YOLOv10": "assets\\img\\LicensePlateRecognition.gif",
     "Vehicle Counting using YOLOv10 and ByteTrack": "assets\\img\\VehicleCounting.gif",
     "Optimizing Traffic Lights Using Traffic Density": "assets\\img\\TrafficLightControl-5.gif",
     "Nozzle Quality Inspection": "assets/img/NozzleQualityInspection.gif",
